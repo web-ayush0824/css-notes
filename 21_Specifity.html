@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specitivity</title>
+
+    <style>
+
+        /* inline>internal>external */
+
+        /* inline>id selector>class or attribute selector>Element selector> Universal Selector  */
+
+        /* To remove inline style use !important  */
+
+        /* The order in which css is writeen that also matters  */
+
+        /* The specivity of universal is 0, element is 1, class has 10, id has 100 and inline has 1000  */
+
+        /* we can add above value to get the specivity and we can tell which style will be applied  */
+
+        h1{
+            color: blue;
+        }
+
+        .red{
+            color: red;
+        }
+
+        .yellow{
+            color: yellow;
+        }
+
+        .purple{
+            color: purple;
+        }
+
+        /* Attribute Selector  */
+        [data-x=a]{
+            background: black;
+        }
+
+
+        /* Cascade algorithm  */
+        
+    </style>
+</head>
+<body>
+    
+
+    <div>
+        <h1 class="red yellow purple">This is a heading</h1>
+        <h2 data-x="a">Testing</h2>
+    </div>
+</body>
+</html>

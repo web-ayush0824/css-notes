@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Through animation we can define which propert should went from where to where  */
+
+        .container{
+            background-color: red;
+            height: 100vh;
+            width: 100vw;
+            border: 2px solid black;
+        }
+
+        .box{
+            height: 5vh;
+            width: 5vw;
+            background-color:aquamarine;
+            border: 2px solid purple;
+
+            /* Write animation name */
+            animation-name: animation;
+
+            /* How much time animation should take to complete  */
+            animation-duration: 4s;
+
+            /* How many times animation should run  */
+            animation-iteration-count: infinite;
+
+
+            animation-timing-function: ease-in-out;
+
+            /* After how much time animation should start  */
+            animation-delay: 2s;
+
+            /* To set direction of animation  */
+            animation-direction: reverse;
+
+
+            /* Where you want to pause the animation we use this in javascript  */
+            /* animation-play-state: paused; */
+
+
+
+            /* Shorthand property  */
+            /* name, duration, timing function, delay, iteration-count  */
+            /* animation: animation 3s ease-in-out 1s infinite ; */
+        }
+
+
+        /* To create animations  */
+        @keyframes animation {
+            from{
+
+            }
+            to{
+                transform: translateX(1000px);
+            }
+
+
+            /* Instead of from and to you can also use 0%,25%,50%,75%,100%  */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>

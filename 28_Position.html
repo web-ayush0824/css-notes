@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* by default all boxes are in postion static which means we canot apply top bottom left right and z-index.  */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box1{
+            background-color: antiquewhite;
+
+            /* It will go to the top of the parent and it went out of the flow now  */
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .box2{
+            background-color: aqua;
+
+            /* It will start moving from it's original position  */
+            position: relative;
+            top: 20px;
+
+            /* To show which item will get top position if 2 elements overlap  */
+            z-index: 1;
+        }
+        .box3{
+            background-color: aquamarine;
+
+
+            /* To make thing fixed in the body  */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        .box4{
+            background-color: beige;
+
+            /* It will become sticky after it comes to the screen  */
+            position: sticky;
+            top: 0;
+        }
+
+        /* transform, filter and prospective properties can also make an element appear as positioned  */
+
+        .box{
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+        .parent{
+            width:100%;
+            height: 50%;
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+    </div>
+    
+</body>
+</html>

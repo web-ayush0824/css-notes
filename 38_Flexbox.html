@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            border: 2px solid red;
+            height: 80vh;
+
+            /* display flex will always be used in parent container  */
+            /* by default flex make items from left to right  */
+            display: flex;
+
+            /* To make items center horizontally  */
+            /* Value:- left,right,flex-start, flex-end, 
+            space around:- give space evenly but not from start and end
+            space-between:- to give equal spacing not from start and end. start and end will start from border 
+            space- evenly:- to give equal spacing from start and end and in between  */
+            justify-content: center;
+
+
+            /* To make items center vertically  */
+            align-items: center;
+
+            /* To make content come in column or in row formart  */
+            /* Value:- column,coulun-reverse,row, row-reserve */
+
+            /* Main axis and cross axis could be changed according to flex direction and justify-content and align items works according to that. If flex-dirextion is row then main direction is x-axis and cross is y but if flex-direction is column then main axis if y-axis and cross axis is x-axis */
+            flex-direction: column;
+
+
+            /* If the number of items are more and it doesn't come in container then it will make the content to come in new line   */
+            flex-wrap: wrap;
+
+
+            /* If you have got 1 line and you want to center both the lines then you will use this  */
+            align-content: center;
+
+
+            /* Research on flex-flow property  */
+
+            /* To give gap between items  */
+            gap: 20px;
+            row-gap: 20px;
+            column-gap: 40px;
+
+        }
+
+        .items {
+            height: 80px;
+            width: 80px;
+            background-color: aqua;
+            padding: 20px;
+            /* margin: 20px; */
+            border: 2px solid red;
+            /* flex-grow: 1; */
+        }
+
+
+        .order {
+
+            /* It will come in 20 position. Higher the number the more it will come after*/
+            order: 20;
+        }
+
+        .item-1 {
+
+            /* It will take space of 2 items */
+            /* flex-grow: 2; */
+
+
+            /* It will shrink in more speed as compared to others  */
+            /* flex-shrink: 2; */
+
+            /* It will align that item to end  */
+            align-self: end;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="items order item-1">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+            <div class="items">4</div>
+            <div class="items">5</div>
+            <div class="items">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+            <div class="items">4</div>
+            <div class="items">5</div>
+        </div>
+    </main>
+</body>
+
+</html>

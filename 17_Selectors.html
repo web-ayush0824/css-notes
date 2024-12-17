@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+
+    <style>
+        /* Element Selector  */
+        h1{
+            color: blue;
+        }
+
+        /* Class Selector  */
+        .div{
+            color: red;
+        }
+
+        /* Id Selector  */
+        #test{
+            background-color: purple;
+        }
+
+        /* Direct Child Selector  */
+        div > p{
+            background-color: peru;
+            color: white;
+        }
+
+        /* Descendent Selector  */
+        div p{
+            color: white;
+            background-color: tomato;
+        }
+
+        /* Universal Selector  */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector  */
+        a:visited{
+            color: bisque;
+        }
+        a:link{
+            color: black;
+        }
+        a:active{
+            color: yellow;
+            background-color: aqua;
+        }
+
+        div:hover{
+            color: white;
+            background-color: red;
+        }
+
+        /* Whereever p is the first child of any group make the color as brown  */
+        p:first-child{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h1>Heading like anything</h1>
+
+    <h1 class="div">This is another heading</h1>
+
+    <h1 id="test">This is id selector</h1>
+
+    <div>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem rem, saepe illo officiis, nulla aut quis sunt inventore, beatae illum dolores debitis temporibus recusandae laborum! Odio omnis iste eum officiis?</p>
+        </article>
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, iusto quaerat nisi fugit culpa voluptatibus earum necessitatibus nesciunt itaque porro omnis! Sunt corporis quasi nemo, iure in, quisquam sequi a obcaecati maxime impedit ut aut voluptatibus eaque numquam. Consequatur mollitia voluptas incidunt cum eum laboriosam aliquam quas provident qui ea!t
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati error, quasi impedit ipsum odit voluptatem. Eos quae quas nisi aut, reiciendis vel adipisci dolore asperiores, consectetur consequuntur facilis cupiditate, consequatur accusamus dolorum sit deserunt? Accusamus assumenda cupiditate, sequi neque ab tempora. Placeat ipsa magnam in culpa a, similique minima! Quasi molestiae rerum possimus aspernatur officia unde porro rem nobis laudantium at hic deleniti inventore, quod necessitatibus, earum, repellat eum doloremque assumenda nulla. Rerum in voluptate laborum vel odit nulla, qui quaerat, similique quam mollitia pariatur. Assumenda vero, voluptatibus iure voluptatum rem qui reprehenderit dolor cumque corporis atque veritatis sint impedit!</p>
+    </div>
+
+
+    <div class="one">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, incidunt! Dolorum molestiae quibusdam explicabo amet unde blanditiis placeat, minus earum mollitia quis ipsa, voluptatibus temporibus veniam pariatur, at aperiam repudiandae?
+    </div>
+
+    <a href="www.google.com">Google</a>
+</body>
+</html>

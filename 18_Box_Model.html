@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: brown;
+            color: white;
+        }
+        .box1{
+            color: yellow;
+            padding: 10px;
+
+            /* Without border box it will be only of content  */
+
+
+            /* Border+padding including if we give height and widhth  */
+            box-sizing: border-box;
+        }
+        .box2{
+            color: black ;
+        }
+    </style>
+</head>
+<body>
+    <!-- Total height and width:- content>padding>border>margin -->
+
+    <div class="box box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tenetur quidem laudantium animi officiis corrupti vero culpa aliquam illo rerum delectus voluptas quis exercitationem voluptates, excepturi eum, hic facere adipisci! Facilis, pariatur facere possimus voluptate, sed numquam dicta eius consectetur illum, alias libero minus voluptatum saepe optio! Eligendi, sed modi.
+    </div>
+
+    <div class="box box2">
+       Another box
+    </div>
+
+
+    <!-- Margin Collapse:- of 2 elemets margin is getting collapsed then that element which has got highest margin will get applied  -->
+    
+</body>
+</html>

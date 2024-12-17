@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid red ;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: brown;
+            border: 2px solid black;
+
+            /* It will rotate the box by 85 deg  */
+            transform: rotate(85deg);
+
+
+            /* It will make the box 2 times more big  */
+            transform: scale(2);
+
+            /* To skew the box  and it can't be done in z axis */
+            transform: skew(5deg);
+
+            /* to translate the box  */
+            transform: translate(200px);
+
+            /* to apply more than 1 transform  */
+            transform: translate(100px) skew(80deg);
+
+
+            /* The origin around which it will be transformed  */
+            transform-origin: 0%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

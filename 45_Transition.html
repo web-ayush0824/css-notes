@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            background-color: antiquewhite;
+            width: 50vw;
+            height: 80vh;
+        }
+        .box{
+            background-color: aquamarine;
+            height: 5vh;
+            width: 5vw;
+
+            /* Property Name  */
+            transition-property: transform;
+
+            /* It will get applied on all properties 
+            transition-property: all; */
+
+            /* For 2 propert change  */
+            /* transition-property: background-color, transform ; */
+
+            /* How much duration shall it take for reaching destination  */
+            transition-duration: 3s;
+
+            /* How it should start and end  */
+            transition-timing-function: ease-in-out;
+
+            /* After how much time it should start  */
+            transition-delay: 4s;
+
+
+            /* Shorthand  */
+            transition: all 3s ease-in-out 4s ;
+        }
+
+
+        .translate{
+            transform: translateX(10vw) translateY(10vh);
+            background-color: brown;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+
+    <style>
+        .box{
+            border: 2px solid black;
+
+            /* To convert block to inline element  */
+            /* If element is inline then padding and margin from top won't get applied  */
+            /* Inline element width can't be set  */
+            display: inline;
+
+            /* If you want both property ot get applied then use inline-block instead of inline  */
+
+
+            /* To hide the block and it won't be taking any space now  */
+            display: none;
+
+            /* It won't be shown in page but still it will take the space  */
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I'm a div 
+    </div>
+    <div>
+        I'm another div 
+    </div>
+
+    <span>I'm a span</span>
+    <span>I'm another span</span>
+</body>
+</html>

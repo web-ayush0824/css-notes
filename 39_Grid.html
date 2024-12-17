@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            border: 2px solid blue;
+            height: 80vh;
+
+            /* To make grid  */
+            display: grid;
+
+            /* To give how many columns and how much width you want of those column  */
+            /* [pehla] - to add name to that column line  */
+            grid-template-columns: [pehla]120px [dushra]100px;
+
+            /* To share the width evenly between columns. fr is fraction */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+
+            /* Shorthand. It will repeat 1fr 4 times */
+            /* grid-template-columns: repeat(4,1fr); */
+
+            /* To give how many rows and how much width you want of those rows  */
+            grid-template-rows: 100px 100px 100px;
+
+            /* Grid Line:- Line between grid 
+            Grid Cell:- One box inside grid 
+            Grid Track:- Space between 2 grid lines  
+            Grid Area:- Area inside the grid 3 */
+
+            gap: 20px;
+
+            /* It will appy on all cells  */
+            justify-items: center;
+            align-items: center;
+
+            /* If you want to perform operations on cell the justify-items, if you want to do according to container then justify content  */
+        }
+
+        .items{
+            border: 2px solid red ;
+            background-color: blueviolet;
+            height: 55px;
+            width: 55px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .item-1{
+            /* It will overlap with the item 4  */
+            grid-row:1/2 ;
+            /* Long hand property of above code  */
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column: 1/2;
+
+            /* It is applied on this box only  */
+            align-self: start;
+            justify-self: start;
+        }
+
+        .item-4{
+            /* It should start from 1 and go to 2. It will get in place of first item */
+            grid-row:1/2 ;
+            grid-column: 1/2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item-1">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items item-4">4</div>
+        <div class="items">5</div>
+    </div>
+</body>
+</html>

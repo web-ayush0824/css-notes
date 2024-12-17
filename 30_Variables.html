@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* TO write global variables  */
+        :root{
+            --color:red;
+
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div:first-child {
+            background-color: var(--color);
+            color: white;
+        }
+
+        ul li{
+            list-style: none;
+        }
+
+        .container {
+
+            /* We can override golobal variable also by creating local variable  */
+            --color:green;
+            background-color:var(--color);
+
+            /* If -- colour is not made then econd color will get applied  */
+            background-color: var(--colour, red);
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam totam placeat voluptates dolor quasi quidem
+            architecto assumenda alias incidunt saepe? Quaerat facere magnam inventore iusto!</p>
+    </div>
+
+
+</body>
+
+</html>

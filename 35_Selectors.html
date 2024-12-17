@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* It will make first line as red  */
+        .box::first-line{
+            color: red;
+        }
+
+        /* Attribute Selector  */
+        [data-color="primary"]{
+            background-color: purple;
+        }
+
+
+        /* Grouping of selectors  */
+        p,a,div,img{
+            color: green;
+        }
+        
+
+        /* To select which child you want to target  */
+        .box:nth-child(even){
+            color: blueviolet;
+            background-color: aqua;
+        }
+
+        /* CHange color of that element which is1st from last  */
+        .box:nth-last-child(1){
+            background-color: hotpink;
+        }
+
+        /* It will add css before the element  */
+        .boxes::before{
+            content: "hello";
+        }
+
+        /* It will add css after the element  */
+        .boxes::after{
+            content: "bye";
+        }
+
+        /* If a user select then he will see this color  */
+        ::selection{
+            color: hotpink;
+            background-color: red;
+        }
+
+        /* To make first letter as this color  */
+        .box::first-letter{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box" data-color="primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nesciunt a ab quibusdam excepturi perspiciatis veniam in sequi natus cupiditate.</div>
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae molestias ad distinctio excepturi ea qui veritatis, velit corporis quis, architecto ut quibusdam quisquam ducimus harum perspiciatis obcaecati a quos commodi.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequatur nemo at perferendis error veniam suscipit! Fugiat dolor ullam voluptate, tempora, natus nulla, ipsa aut veniam quibusdam dolore labore id. Suscipit accusamus nostrum obcaecati dignissimos voluptatem explicabo eos praesentium tempore?</div>
+    </div>
+</body>
+</html>

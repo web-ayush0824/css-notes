@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font, Color and Text Properties</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+
+    <style>
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        p {
+            /* Font family has comma seperated value if first doesn't get applied then 2nd will get applied and like that it continues  */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+            font-size: 12px;
+            font-weight: 600;
+            text-decoration: underline;
+            text-decoration-color: blue;
+            text-decoration-style: wavy;
+            text-decoration-thickness: 2px;
+
+            /* SPace from left  */
+            text-indent: 24px;
+
+            /* If the text overflows then how you want to show them  */
+            text-overflow: none;
+
+            /* To not overflow content  */
+            overflow: hidden;
+
+            /* To break the word in new line  */
+            word-break: break-all;
+            line-height: 2;
+            letter-spacing: 2px;
+            word-spacing: 20px;
+        }
+
+        h2 {
+            font-family: "Baloo Bhai 2", sans-serif;
+            text-transform: capitalize;
+
+            /* to make center allign text  */
+            text-align: center;
+        }
+
+        h3 {
+            color: tomato;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt harum inventore debitis in asperiores
+            molestias, repellendus odit. Saepe, deleniti quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, fuga incidunt illum, deleniti libero nam quibusdam explicabo mollitia quod necessitatibus aspernatur pariatur? Dolorum sint ipsa ad similique adipisci accusantium porro ducimus omnis numquam. Alias impedit eveniet quibusdam. Nostrum consequuntur officia magni eum repellendus dolore non veritatis doloremque et possimus omnis odio eaque enim ex doloribus maiores animi velit maxime fugit, odit tempore ipsam minus? Officia error maxime fugit quos at? Minima qui magni earum accusamus animi, ab eveniet officia labore, consequatur, soluta nobis? Dicta officia autem cum ad fugiat debitis, accusamus nemo repudiandae nobis sit, sequi recusandae quod, dolor voluptate.</p>
+        <h2>Another heading</h2>
+    </div>
+
+    <!-- For google font we can import in 2 ways:-
+    1. Through import statement in css file
+    2. Through link tag in html file -->
+
+
+    <h3>This is another heading</h3>
+    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus vel perferendis voluptate earum, voluptas
+        quam? Numquam sint atque sapiente repellat architecto.</span>
+
+</body>
+
+</html>

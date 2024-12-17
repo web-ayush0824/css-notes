@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 20px;
+
+
+            /* To add box shadow  */
+            /* box shadow: horizontal-offset vertical-offset blur spread color inset  */
+
+            /* inset is used to make shadow inside the box  */
+
+            box-shadow: 2px 2px 2px 2px red inset;
+
+
+            /* To give text shadow  */
+            /* text shadow: h-offset v-offset blur color; */
+
+            text-shadow: 2px 2px 2px green;
+        }
+
+
+        .box1{
+
+            /* Border will be inside outline will be outside and it doesn't take space around an element  */
+            /* outline: width style color. Outline have uniform width. Outline cannot have rounded corners  */
+            outline: 10px solid red;
+            margin: 20px;
+
+            /* to increase offset  */
+            outline-offset: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I'm a box
+    </div>
+
+    <div class="box1">
+        I'm another box
+    </div>
+</body>
+</html>
